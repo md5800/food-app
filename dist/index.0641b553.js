@@ -35840,7 +35840,7 @@ const Body = ()=>{
                     className: "whatonmindsec",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            children: "What's on your mind?"
+                            children: "What on your mind?"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
                             lineNumber: 137,

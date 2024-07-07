@@ -134,7 +134,7 @@ const Body =() =>{
                 </div>
                 
                 <div className="whatonmindsec">
-                  <h2>What's on your mind?</h2>
+                  <h2>What on your mind?</h2>
                   {/* <h2>{json?.data?.cards[0]?.card?.card?.header?.title}</h2> */}
                   <div className="row">
                   <Slider {...settings}>
