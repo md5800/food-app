@@ -1,0 +1,327 @@
+Inialize git
+1. First go to your github account
+2. Create new repository name it as your project name vut it should be a unique name
+3. Now open vs code terminal
+4. git init (it will initialize git into your project)
+5. git branch -M main (changing branch to main from master)
+6. git add . (it will add all your code)
+7. git commit -m "your message"
+8. git remote add origin https://github.com/md5800/your-project-name-in-git.git (it will link your local to git repository)
+9. git push origin main (it will add all your code to git repository)
+10. If you don't want to push any file or folder to git then create a file named with ".gitignore" and put the name of the
+file or folder into that file(for example put /node_module to avoid pushing node module onto git as we can regenerate our 
+node module from package.json whenever we want)
+======Git Commands=====
+1. To see in which origin you are in git remote -v
+2. change origin git remote set-url origin https://github.com/user/repo2.git
+
+To react a project with parcel
+1. npm init
+2. npm install -D parcel
+3. npx parcel index.html
+4. npm i react
+5. npm i react-dom
+6. import React from "react";
+7. import ReactDOM from "react-dom";
+8. add type module to the script tag
+9. remove "main": "app.js", from package.json
+10. add browserlist ("browserlist":["last 2 versions"]) in your package.json after dependencies
+11. add "start": "parcel index.html",
+    "build": "parcel build index.html",
+    these to package.json under scrit:{}
+
+
+==================Episode contents===============
+Episode 5: 
+1) creating component
+2) linking compoment to app.js
+3) utils folder
+4) named export
+5) Top rated restaurent
+Episode 6: 
+1) Monolith and microservice architecture
+2) Shimmer ui
+3) useEffect
+4) fetch api and show dynamic data
+5) login/logout btn
+6) Search functionality
+Episode 7: 
+1) page link and redirect header menu to their respective pages using createBrowserRouter,RouterProvider,outlet
+2) Error page design and redirect to error page
+3) restaurent menu page design, fetch restaurent menu from api
+4) Redirect all restaurent to their respective restaurent menu page
+
+Episode 8: 
+1)Class compoment (constructor, super, render,componentDidMount)
+2)componentDidMount use to make API call
+3)Class compoment lifecycle
+4)Diagram of react class compoment lifecycle method "https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
+
+Episode 9: 
+1)Custom hooks
+2)Single responsibility principle
+3)Chucking/code splitting/Dynamic Bundling/ Lazy loading/On demand loading/Dynamic Import(lazy component,suspense)
+
+Episode 10: 
+1) ways to put css into our project
+ a)Normal css
+ b)SCSS/SASS
+ c)Styled component
+ d)Bootstrap
+ e)Material UI
+ f)Chakra UI
+ g)Ant Design
+ h)Tailwind
+ i)Tailwind setup
+ j)How does Tailwind work
+
+Episode 11: 
+a)Higher order component
+b)Controlled and Uncontrolled compoment
+c)Lifting the state up
+d)Props drilling
+e)React context
+
+Episode 12:
+a)Redux 
+b)Cart functionality from 18mins
+c)create store
+
+Redux toolkit steps:
+-Intasll @reduxjs/toolkit and react-redux
+-build our store
+-connect store to our app
+-create slice (cart slice)
+-dispatch(action)
+-selector
+
+===========React hooks===========
+hooks are used to change state of our UI design.
+
+1.useState()
+2.useEffect()
+these are most commonly used hooks in react
+
+
+===========useState Hook===========
+whenever we call useState,it provides us state variables in form of an array and we have to receive it as an array.
+we can pass an empty array as the default value in useState
+
+1. Now when we create a state variable(syntax is slightly different from a normal variable) we have to put the variable 
+name in an array and assign to useastate function
+
+SYNTAX=====
+const [newList] = useState();
+
+2. Now say we want to add a default value for this array
+SYNTAX======
+const [newList] = useState(
+    [default array]
+);
+
+3. Now if you want to update the "newList" (a state variable) we connot reassign any other value to it,
+we have pass another argument and using that argument we can update the older value
+
+SYNTAX=======
+const [newList, setNewList] = useState(
+    [default array]
+);
+
+=============useEffect Hook=============
+SYNTAX======= 
+useEffect(()=>{}, []);  =====useEffect(function, array)
+
+though it is not mandatory to have array in syntax, but the function is mandatory.
+
+*useEffect is called everytime the compoment(where the useEffect is called) gets render.
+
+There could be 3 cases for useEffect
+Case 1> If no dependency array is used => useEffect is called on every render
+Case 2> if dependency array is empty = [] => useEffect is called on initial render( just once)
+Case 3> if dependency array is [loginBtn] (just for example) => useEffect is called loginBtn gets updated
+
+we call API in useEffect hook so that our website can load default data initially and when the API is fetched then it
+can be loaded with API's data - this reduce user's wait time for page loading.
+
+=============useParams Hook=============
+fetch unique id from url.
+
+=============React Virtual DOM==============
+Reference Video - EPISODE 5 (1hr 45min)
+To update the UI react follow "Reconcilation Algorith" or "ReactFiber".
+
+How it works----
+1.To update the ui react create a Virtual dom of the actual dom.
+
+Virtual Dom = It is a object which react create with createReactElelemt, every component in react at the end of the day
+converted into createReactElelemt, and this createReactElelemt then converted into an object
+
+Actual DOM = It is the actual HTML DIV Structure
+
+2. Then react finds the difference between the Actual DOM and the Virtual DOM
+
+3. Then react update only the different part, not the full UI
+
+4. That is why react is fast in updating the UI.
+
+=============Monolithic Architecture=============
+A monolithic architecture is a singular, large computing network with one code base that couples all
+of the business concerns together.
+
+=============Microservices Architecture=============
+Microservices are small, specialized, and independent parts of an application. Each microservice handles
+a specific task, like managing users, processing payments, or showing search results.
+
+Microservices can be developed, deployed, and updated separately. This means if you want to improve
+the user management part of your application, you can work on that without affecting other parts.
+
+This approach makes development faster, more flexible, and easier to manage, especially for complex
+applications. Plus, if one microservice fails, it doesn't bring down the whole system.
+
+=============Shimmer UI=============
+>> What is shimmer ui?
+A better way to show loading states is to use a shimmer UI. A shimmer UI is a version of the UI that doesn’t contain
+actual content, but instead mimics the layout and shapes of the content that will eventually appear. It uses a gradient
+animation that creates a shimmering effect over the placeholders, giving the user a sense of motion and progress.
+
+=============Conditional Rendering=============
+Rendering on basis of some condition known as conditional rendering.
+Ex: shimmer ui (shimmer ui renders only when api data is not loaded yet)
+
+=============Why we use state variable=============
+In react we use normal js variable for so many things like creating compoment, for creating any variable
+but in those cases react doesn’t re-render it's UI because when we create any component not necessarily we
+need to render the UI.
+
+But there are cases where we definitely need to re-render the ui to update the changes but if we use normal js variable
+in this case then react will not understand that it has to render the UI again, here state variable comes into play.
+
+whenever we use any stateVariable, and if the stateVariable is updated react gets to know that it has to render the
+ui again.
+
+=============How can we update useState value even after declaring with const variable=============
+When we use useState and when state variable value is updated, react re-render the ui again and update only the difference
+between the actual Dom and virtual Dom, while re-renderig the UI react re-render the component again where it foind the
+difference. As it re-render the component react treats the useState as a new declared variable so the instance of the 
+privious useState and the instance of the useState after re-render is different.
+
+That is why it doesn’t complain if we declare useState with const.
+
+
+=============Routing in web apps=============
+There are two types of Routing
+
+1. Client side routing ===> This is how React works, it doesn’t make any network call, all the code for the inner pages
+is already there, react just load one div in place of another.
+2. Server side routing ===> This is how html works, it makes network call from server while loading any page and the
+server provide the data to html. This is the reason why page gets reloaded in HTML.
+
+=============componentDidMount=============
+This is a method which react provides us for class component.
+This is use to call API.
+
+We call API in componentDidMount method to reduce page loading time. Same concept as useStatehook
+
+=============componentDidUpdate=============
+After updating the UI with api data componentDidUpdate is called.
+
+=============componentWillUnmount=============
+This is called when any component gets unmounted from UI that means when change url that time component will get hidden from the 
+previous url that time we can see componentWillUnmount.
+
+It is use to cleanup codes. 
+for example if we created any setInterval that will be called even if we change the url as react is single page website.
+To fix this we can clearInterval in componentWillUnmount;
+
+**We can do the same thing with useEffect but with useEffect we have to clearInterval in return method.
+
+=============React class component lifecycle=============
+-----Mounting Phase-----
+*constructor called with dummy text
+*render called with dummy HTML
+*componentDidMount
+---API call
+---this.state => state variable is updated
+
+-----Update-----
+---render with API data
+---HTML loaded with new api data
+---componentDidUpdate is called
+
+=============Single responsibility principle=============
+This means any class or any function or any single identity should have their single responsibility
+
+=============Chucking=============
+In React, bundler like parcel minify and bundle the code to make a production ready app but for large scale 
+project if we bundle all the code to a single js file then it will increase website loading time.
+
+To solve this problem we can use chucking/ lazy loading in react.
+with lazy loading react bundler will create a different js file for all the component which we will call 
+using lazy loading.
+
+For this react provide us a component called lazy where we can import our desired component without importing it in convensional
+way.This will help the bundler to create a separate js file.
+
+But now react will throw an error as we are using lazy loading for that component and react is too fast for loading it's components.
+When react will try to load it it will not found it's code as it is using lazy loading. To solve this Suspense comes into play.
+We can wrap the component in Suspense.
+
+==========================Tailwind CSS==========================
+For setup process:
+https://tailwindcss.com/docs/guides/parcel
+
+For utility classes
+https://tailwindcss.com/docs/utility-first
+
+==========================Higher order component==========================
+Higher Order Component is a function which takes a component as an argument and returns a component
+
+==========================Props drilling==========================
+Props drilling when we want to use a data in child div from it's parent div, and if that child div is 6 or 7 label inside
+from its parent div then it will be a problem to pass that data as an props from parent to child.
+
+==========================React Context==========================
+To solve the above issue react use a concept called react context. Context has a super power, with that we can store any data using context,and we can use that context anywhere in our project,it's like a global object.
+
+To create context react gives us a hook called createContext
+Ex:
+const SomeContext = createContext(defaultValue);
+we can use it anywhere in our project using useContext hook.
+
+const data = useContext(SomeContext);
+
+In case of class based compoment where we cannot use any hook, there we can use .Consumer compoment and in this component we use a callback function(as a JSX) where we pass context as argument
+Ex:
+<SomeContext.Consumer>
+(data)=>{console.log(data)}
+</SomeContext.Consumer>
+
+To make the context value dynamic we can use .provider and we can pass a value which we want
+Ex. app.js
+
+==========================Redux==========================
+We use redux to build our own store,where we can store our data, it's just like context, only the difference is for large scale application we use redux, and for small scale application we can use context. It's not mandatory to use redux whenever we are creating any react project, when we will feel that our application is getting larger and it will be better to manage our data with Redux then we can install redux.
+
+Basically Redux used for state management and there are other libraries also like redux ex: zustand
+
+Advantages of usung redux:
+1)It is used for state management
+2)It becomes easier to debug as redux also has it's own debugging tool
+
+3)Redux store basically a huge javascript object which is stored in a global place, to manage data it has multiple slice, slice basically creates logical separation like if we want to add some data related to cart then we can create cart slice, if it is related to theme we can create theme slice, like this way we can create user slice for user related data etc.
+How to add data(write data) in add to cart process:
+When user clicks on a add to cart button -> it dispatches a action -> calls a function(this function is known as reducer)-> and this will modify the cart slice
+How to get data(read data) in add to cart process:
+For this we use a selector this process is called subscribing to our store basically it sync the header cart to our cart store so that when ever new product is added to our cart the header cart icon is also updated.
+
+Redux toolkit steps:
+-Intasll @reduxjs/toolkit and react-redux
+-build our store
+-connect store to our app
+-create slice (cart slice)
+-dispatch(action)
+-selector
+
+
+Build our store:
+to build our store redux toolkit provides us a functoion called configurestore()
