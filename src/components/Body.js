@@ -11,6 +11,7 @@ import Slider from "react-slick";
 // Import slick css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import whatsOnYourMind from "./whatsOnYourMind"
 
 
 const Body =() =>{
@@ -134,14 +135,27 @@ const Body =() =>{
                 </div>
                 
                 <div className="whatonmindsec">
-                  <h2>What on your mind?</h2>
+                  <h2>What's on your mind?</h2>
                   {/* <h2>{json?.data?.cards[0]?.card?.card?.header?.title}</h2> */}
                   <div className="row">
-                  <Slider {...settings}>
+                  {/* <Slider {...settings}>
                     {
                         whatsOnYourMind.map((whatonmind)=>(
                             <div className="col-md-2" key={whatonmind.id}>
                                 <Link to={whatonmind.action.link}> 
+                                    <div className="image">
+                                        <img src={WHATS_ON_YOUR_MIND_IMG + whatonmind.imageId} alt="" />
+                                    </div>
+                               </Link>
+                            </div>
+                        )) 
+                    }
+                    </Slider> */}
+                    <Slider {...settings}>
+                    {
+                        whatsOnYourMind.map((whatonmind)=>(
+                            <div className="col-md-2" key={whatonmind.id}>
+                                <Link to={"/whatsOnYourMind/" + whatonmind.id} > 
                                     <div className="image">
                                         <img src={WHATS_ON_YOUR_MIND_IMG + whatonmind.imageId} alt="" />
                                     </div>

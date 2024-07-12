@@ -47,7 +47,8 @@ const menuItems = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2
 const menuCategory = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(index => index?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
 
 // console.log(resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
-// console.log(menuCategory);
+console.log(resMenu);
+console.log(menuCategory);
 
 
 return(
