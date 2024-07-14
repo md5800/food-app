@@ -437,6 +437,10 @@ img, video {
   text-align: end;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -783,6 +787,26 @@ h2 {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.mainsec .filtersec {
+  padding: 2rem 0;
+}
+
+.mainsec .filtersec .filter-option {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #02060c26;
+  border-radius: 1.8rem;
+  min-width: 90px;
+  margin: 0 4px;
+  padding: .5rem 1.2rem;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 12px #02060c0a;
+}
+
+.mainsec .filtersec .filter-option i {
+  font-size: 1.3rem;
 }
 
 .mainsec .cardbox .cardimg {

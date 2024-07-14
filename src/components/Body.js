@@ -12,7 +12,7 @@ import Slider from "react-slick";
 // Import slick css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import whatsOnYourMind from "./whatsOnYourMind"
+
 
 
 const Body =() =>{
@@ -184,6 +184,11 @@ const Body =() =>{
 
                 <div className="cardsec mt-5">
                     <h2>Top restaurant chains in Kolkata</h2>
+                    <div className="filtersec d-flex justify-start align-middle">
+                        <div className="filter-option">Sort By <i class="bi bi-chevron-down"></i></div>
+                        <div className="filter-option">Veg</div>
+                        <div className="filter-option">Non Veg</div>
+                    </div>
                     <div className="row justify-content-start align-items-start">
                         {
                             filteredRestaurant.map(restaurantData =>

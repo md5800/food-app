@@ -35616,8 +35616,6 @@ var _reactSlickDefault = parcelHelpers.interopDefault(_reactSlick);
 // Import slick css files
 var _slickCss = require("slick-carousel/slick/slick.css");
 var _slickThemeCss = require("slick-carousel/slick/slick-theme.css");
-var _whatsOnYourMind = require("./whatsOnYourMind");
-var _whatsOnYourMindDefault = parcelHelpers.interopDefault(_whatsOnYourMind);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
@@ -35935,6 +35933,48 @@ const Body = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "filtersec d-flex justify-start align-middle",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "filter-option",
+                                    children: [
+                                        "Sort By ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            class: "bi bi-chevron-down"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Body.js",
+                                            lineNumber: 188,
+                                            columnNumber: 64
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Body.js",
+                                    lineNumber: 188,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "filter-option",
+                                    children: "Veg"
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.js",
+                                    lineNumber: 189,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "filter-option",
+                                    children: "Non Veg"
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.js",
+                                    lineNumber: 190,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 187,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "row justify-content-start align-items-start",
                             children: filteredRestaurant.map((restaurantData)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "col-md-3",
@@ -35944,28 +35984,28 @@ const Body = ()=>{
                                             resData: restaurantData
                                         }, void 0, false, {
                                             fileName: "src/components/Body.js",
-                                            lineNumber: 192,
+                                            lineNumber: 197,
                                             columnNumber: 61
                                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantNonVeg, {
                                             resData: restaurantData
                                         }, void 0, false, {
                                             fileName: "src/components/Body.js",
-                                            lineNumber: 192,
+                                            lineNumber: 197,
                                             columnNumber: 108
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Body.js",
-                                        lineNumber: 191,
+                                        lineNumber: 196,
                                         columnNumber: 33
                                     }, undefined)
                                 }, restaurantData.info.id, false, {
                                     fileName: "src/components/Body.js",
-                                    lineNumber: 190,
+                                    lineNumber: 195,
                                     columnNumber: 29
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 187,
+                            lineNumber: 192,
                             columnNumber: 21
                         }, undefined)
                     ]
@@ -36001,7 +36041,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./ResCard":"ezFeH","react":"21dqq","../img/loader.gif":"1wow2","./Shimmer":"g6ZGj","react-router-dom":"9xmpe","../utils/useOnlineStatus":"181Ji","../utils/UserContext":"c5vgB","../utils/constants":"hB8jg","react-slick":"1g9sW","slick-carousel/slick/slick.css":"gyhyx","slick-carousel/slick/slick-theme.css":"eyap3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./whatsOnYourMind":"7wiZH"}],"ezFeH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./ResCard":"ezFeH","react":"21dqq","../img/loader.gif":"1wow2","./Shimmer":"g6ZGj","react-router-dom":"9xmpe","../utils/useOnlineStatus":"181Ji","../utils/UserContext":"c5vgB","../utils/constants":"hB8jg","react-slick":"1g9sW","slick-carousel/slick/slick.css":"gyhyx","slick-carousel/slick/slick-theme.css":"eyap3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ezFeH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40382,250 +40422,7 @@ module.exports = {
     each: each
 };
 
-},{}],"gyhyx":[function() {},{}],"eyap3":[function() {},{}],"7wiZH":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$059a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$059a.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _resCard = require("./ResCard");
-var _resCardDefault = parcelHelpers.interopDefault(_resCard);
-var _reactRouterDom = require("react-router-dom");
-var _useWhatsOnYourMindData = require("../utils/useWhatsOnYourMindData");
-var _useWhatsOnYourMindDataDefault = parcelHelpers.interopDefault(_useWhatsOnYourMindData);
-var _s = $RefreshSig$();
-const whatsOnYourMind = ()=>{
-    _s();
-    const { collectionId, tags } = (0, _reactRouterDom.useParams)();
-    const categoryMenu = (0, _useWhatsOnYourMindDataDefault.default)(collectionId, tags);
-    // if (categoryMenu.length === 0) return (
-    //     <div className="shimmerbox">
-    //         <div className="container">
-    //             <div className="row">
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                     <Shimmer/>
-    //                 </div>
-    //             </div>
-    //     </div>
-    // )
-    const categoryRes = categoryMenu?.cards?.filter((index)=>index?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Restaurant");
-    console.log(categoryRes);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "mainsec whatsonyourmindpg",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "cardsec mt-5",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "Restaurants to explore"
-                    }, void 0, false, {
-                        fileName: "src/components/whatsOnYourMind.js",
-                        lineNumber: 35,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "row justify-content-start align-items-start",
-                        children: categoryRes?.map((categoryData)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "col-md-3",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/restaurant/" + categoryData?.card?.card?.info?.id,
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "cardbox mt-5",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "cardimg",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + categoryData?.card?.card?.info?.cloudinaryImageId,
-                                                    alt: "cardimg"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/whatsOnYourMind.js",
-                                                    lineNumber: 48,
-                                                    columnNumber: 45
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/whatsOnYourMind.js",
-                                                lineNumber: 47,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "cardcontent",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                        className: "mt-3 mb-3",
-                                                        children: [
-                                                            categoryData?.card?.card?.info?.name,
-                                                            " ",
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    color: "#000"
-                                                                },
-                                                                children: [
-                                                                    "(",
-                                                                    categoryData?.card?.card?.info?.cuisines?.join(","),
-                                                                    ")"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/whatsOnYourMind.js",
-                                                                lineNumber: 51,
-                                                                columnNumber: 106
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/whatsOnYourMind.js",
-                                                        lineNumber: 51,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                                className: "bi bi-star"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/whatsOnYourMind.js",
-                                                                lineNumber: 52,
-                                                                columnNumber: 45
-                                                            }, undefined),
-                                                            " ",
-                                                            categoryData?.card?.card?.info?.avgRating,
-                                                            " ",
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "dot-divider"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/whatsOnYourMind.js",
-                                                                lineNumber: 52,
-                                                                columnNumber: 120
-                                                            }, undefined),
-                                                            " ",
-                                                            categoryData?.card?.card?.info?.sla?.slaString,
-                                                            " ",
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "dot-divider"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/whatsOnYourMind.js",
-                                                                lineNumber: 52,
-                                                                columnNumber: 207
-                                                            }, undefined),
-                                                            " ",
-                                                            categoryData?.card?.card?.info?.costForTwo
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/whatsOnYourMind.js",
-                                                        lineNumber: 52,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Lorem ipsum dolor sit amet consectetur adipisicing elit?"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/whatsOnYourMind.js",
-                                                        lineNumber: 53,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/whatsOnYourMind.js",
-                                                lineNumber: 50,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/whatsOnYourMind.js",
-                                        lineNumber: 46,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/whatsOnYourMind.js",
-                                    lineNumber: 45,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, categoryData?.card?.card?.info?.id, false, {
-                                fileName: "src/components/whatsOnYourMind.js",
-                                lineNumber: 39,
-                                columnNumber: 29
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/components/whatsOnYourMind.js",
-                        lineNumber: 36,
-                        columnNumber: 21
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/whatsOnYourMind.js",
-                lineNumber: 34,
-                columnNumber: 13
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/whatsOnYourMind.js",
-            lineNumber: 33,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/whatsOnYourMind.js",
-        lineNumber: 32,
-        columnNumber: 9
-    }, undefined);
-};
-_s(whatsOnYourMind, "xluKIjoQOXaEOr62O9zlSSKyTOw=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams),
-        (0, _useWhatsOnYourMindDataDefault.default)
-    ];
-});
-exports.default = whatsOnYourMind;
-
-  $parcel$ReactRefreshHelpers$059a.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./Shimmer":"g6ZGj","./ResCard":"ezFeH","react-router-dom":"9xmpe","../utils/useWhatsOnYourMindData":"609GG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"609GG":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9dfc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9dfc.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _constants = require("../utils/constants");
-var _s = $RefreshSig$();
-const useWhatsOnYourMindData = (collectionId, tags)=>{
-    _s();
-    const [whatsOnYourMindCategory, setWhatsOnYourMindCategory] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        fetchWhatsOnYourMindRes();
-    }, []);
-    const fetchWhatsOnYourMindRes = async ()=>{
-        // const categoryData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.499757&lng=88.3177647&collection=83631&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
-        const categoryData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.499757&lng=88.3177647&collection=" + collectionId + "&tags=layout_CCS_" + tags + "&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
-        const json = await categoryData.json();
-        console.log(json);
-        console.log("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.499757&lng=88.3177647&collection=" + collectionId + "&tags=layout_CCS_" + tags + "&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
-        setWhatsOnYourMindCategory(json.data);
-    };
-    return whatsOnYourMindCategory;
-};
-_s(useWhatsOnYourMindData, "rwfZEq7sDihGYmpTVLMnMsjM3VI=");
-exports.default = useWhatsOnYourMindData;
-
-  $parcel$ReactRefreshHelpers$9dfc.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
+},{}],"gyhyx":[function() {},{}],"eyap3":[function() {},{}],"9R1Eu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -46227,6 +46024,249 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../img/logo.png":"5P2nf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["3lsJq","1xC6H","bNKaB"], "bNKaB", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","../img/logo.png":"5P2nf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wiZH":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$059a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$059a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _resCard = require("./ResCard");
+var _resCardDefault = parcelHelpers.interopDefault(_resCard);
+var _reactRouterDom = require("react-router-dom");
+var _useWhatsOnYourMindData = require("../utils/useWhatsOnYourMindData");
+var _useWhatsOnYourMindDataDefault = parcelHelpers.interopDefault(_useWhatsOnYourMindData);
+var _s = $RefreshSig$();
+const whatsOnYourMind = ()=>{
+    _s();
+    const { collectionId, tags } = (0, _reactRouterDom.useParams)();
+    const categoryMenu = (0, _useWhatsOnYourMindDataDefault.default)(collectionId, tags);
+    // if (categoryMenu.length === 0) return (
+    //     <div className="shimmerbox">
+    //         <div className="container">
+    //             <div className="row">
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                     <Shimmer/>
+    //                 </div>
+    //             </div>
+    //     </div>
+    // )
+    const categoryRes = categoryMenu?.cards?.filter((index)=>index?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Restaurant");
+    console.log(categoryRes);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "mainsec whatsonyourmindpg",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "cardsec mt-5",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Restaurants to explore"
+                    }, void 0, false, {
+                        fileName: "src/components/whatsOnYourMind.js",
+                        lineNumber: 35,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "row justify-content-start align-items-start",
+                        children: categoryRes?.map((categoryData)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "col-md-3",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/restaurant/" + categoryData?.card?.card?.info?.id,
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "cardbox mt-5",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "cardimg",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + categoryData?.card?.card?.info?.cloudinaryImageId,
+                                                    alt: "cardimg"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/whatsOnYourMind.js",
+                                                    lineNumber: 48,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/whatsOnYourMind.js",
+                                                lineNumber: 47,
+                                                columnNumber: 41
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "cardcontent",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                        className: "mt-3 mb-3",
+                                                        children: [
+                                                            categoryData?.card?.card?.info?.name,
+                                                            " ",
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                style: {
+                                                                    color: "#000"
+                                                                },
+                                                                children: [
+                                                                    "(",
+                                                                    categoryData?.card?.card?.info?.cuisines?.join(","),
+                                                                    ")"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/whatsOnYourMind.js",
+                                                                lineNumber: 51,
+                                                                columnNumber: 106
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/whatsOnYourMind.js",
+                                                        lineNumber: 51,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                className: "bi bi-star"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/whatsOnYourMind.js",
+                                                                lineNumber: 52,
+                                                                columnNumber: 45
+                                                            }, undefined),
+                                                            " ",
+                                                            categoryData?.card?.card?.info?.avgRating,
+                                                            " ",
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "dot-divider"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/whatsOnYourMind.js",
+                                                                lineNumber: 52,
+                                                                columnNumber: 120
+                                                            }, undefined),
+                                                            " ",
+                                                            categoryData?.card?.card?.info?.sla?.slaString,
+                                                            " ",
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "dot-divider"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/whatsOnYourMind.js",
+                                                                lineNumber: 52,
+                                                                columnNumber: 207
+                                                            }, undefined),
+                                                            " ",
+                                                            categoryData?.card?.card?.info?.costForTwo
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/whatsOnYourMind.js",
+                                                        lineNumber: 52,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Lorem ipsum dolor sit amet consectetur adipisicing elit?"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/whatsOnYourMind.js",
+                                                        lineNumber: 53,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/whatsOnYourMind.js",
+                                                lineNumber: 50,
+                                                columnNumber: 41
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/whatsOnYourMind.js",
+                                        lineNumber: 46,
+                                        columnNumber: 37
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/whatsOnYourMind.js",
+                                    lineNumber: 45,
+                                    columnNumber: 33
+                                }, undefined)
+                            }, categoryData?.card?.card?.info?.id, false, {
+                                fileName: "src/components/whatsOnYourMind.js",
+                                lineNumber: 39,
+                                columnNumber: 29
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/components/whatsOnYourMind.js",
+                        lineNumber: 36,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/whatsOnYourMind.js",
+                lineNumber: 34,
+                columnNumber: 13
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/whatsOnYourMind.js",
+            lineNumber: 33,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/whatsOnYourMind.js",
+        lineNumber: 32,
+        columnNumber: 9
+    }, undefined);
+};
+_s(whatsOnYourMind, "xluKIjoQOXaEOr62O9zlSSKyTOw=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams),
+        (0, _useWhatsOnYourMindDataDefault.default)
+    ];
+});
+exports.default = whatsOnYourMind;
+
+  $parcel$ReactRefreshHelpers$059a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Shimmer":"g6ZGj","./ResCard":"ezFeH","react-router-dom":"9xmpe","../utils/useWhatsOnYourMindData":"609GG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"609GG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9dfc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9dfc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _constants = require("../utils/constants");
+var _s = $RefreshSig$();
+const useWhatsOnYourMindData = (collectionId, tags)=>{
+    _s();
+    const [whatsOnYourMindCategory, setWhatsOnYourMindCategory] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        fetchWhatsOnYourMindRes();
+    }, []);
+    const fetchWhatsOnYourMindRes = async ()=>{
+        // const categoryData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.499757&lng=88.3177647&collection=83631&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
+        const categoryData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.499757&lng=88.3177647&collection=" + collectionId + "&tags=layout_CCS_" + tags + "&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
+        const json = await categoryData.json();
+        console.log(json);
+        console.log("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.499757&lng=88.3177647&collection=" + collectionId + "&tags=layout_CCS_" + tags + "&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
+        setWhatsOnYourMindCategory(json.data);
+    };
+    return whatsOnYourMindCategory;
+};
+_s(useWhatsOnYourMindData, "rwfZEq7sDihGYmpTVLMnMsjM3VI=");
+exports.default = useWhatsOnYourMindData;
+
+  $parcel$ReactRefreshHelpers$9dfc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["3lsJq","1xC6H","bNKaB"], "bNKaB", "parcelRequire164e")
 
 //# sourceMappingURL=index.0641b553.js.map

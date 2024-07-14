@@ -258,6 +258,23 @@ h2 {
   left: 10px;
   z-index: 1;
 }
+.mainsec .filtersec {
+  padding: 2rem 0;
+}
+.mainsec .filtersec .filter-option {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid rgba(2, 6, 12, 0.1490196078);
+  border-radius: 1.8rem;
+  margin: 0 4px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 12px rgba(2, 6, 12, 0.0392156863);
+  min-width: 90px;
+}
+.mainsec .filtersec .filter-option i {
+  font-size: 1.3rem;
+}
 .mainsec .cardbox .cardimg {
   width: 100%;
   height: 22rem;
