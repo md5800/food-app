@@ -99,7 +99,7 @@ h2{
 
 }
 
-
+// ===========Header============
 .headersec {
     background-color: #ffffff;
     padding: 20px 30px;
@@ -136,6 +136,21 @@ h2{
        }
       }
    }
+}
+
+// ===========Footer============
+.ftsec{
+  background-color: #02060c;color: #ffffff99;    padding: 8rem 0;
+  .logo img{max-height: 10rem;width: auto;margin-bottom: 1.5rem;}
+  h4{color: #fff;font-size:2.6rem;margin-bottom: 1.5rem;}
+  p{font-size: 1.8rem;color: #ffffff99;max-width: 90%;}
+  ul{
+    margin: 0;padding: 0;
+    li{
+      list-style: none;margin-bottom: 1rem;font-size: 1.8rem;
+      a{text-decoration: none;color: #ffffff99;}
+    }
+  }
 }
 
 // ===========Home============

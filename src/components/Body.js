@@ -1,6 +1,7 @@
 import ResCard, {WithVegInfo, WithNonVegInfo} from "./ResCard";
 // import resCardData from "../utils/cardData";
 import { useState , useEffect , useContext} from "react";
+
 import loader from "../img/loader.gif";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -46,7 +47,13 @@ const Body =() =>{
   }
 
   const [searchText, setSearchText] = useState("");
+   
 
+// Get the collection_id parameter
+  const extractCollectionId = (url) => {
+    const parsedUrl = new URL(url);
+    return parsedUrl.searchParams.get('collection_id');
+};
 
   var settings = {
     dots: false,
@@ -153,15 +160,21 @@ const Body =() =>{
                     </Slider> */}
                     <Slider {...settings}>
                     {
-                        whatsOnYourMind.map((whatonmind)=>(
-                            <div className="col-md-2" key={whatonmind.id}>
-                                <Link to={"/whatsOnYourMind/" + whatonmind.id} > 
-                                    <div className="image">
-                                        <img src={WHATS_ON_YOUR_MIND_IMG + whatonmind.imageId} alt="" />
-                                    </div>
-                               </Link>
-                            </div>
-                        )) 
+                        whatsOnYourMind.map((whatonmind) => {
+                            const collectionId = extractCollectionId(whatonmind?.action?.link);
+                            // console.log(collectionId); 
+                        
+                            // Return JSX elements inside map function
+                            return (
+                                <div className="col-md-2" key={whatonmind.id}>
+                                    <Link to={"/whatsOnYourMind/" + collectionId + "/" + whatonmind.action.text}>
+                                        <div className="image">
+                                            <img src={WHATS_ON_YOUR_MIND_IMG + whatonmind.imageId} alt="" />
+                                        </div>
+                                    </Link>
+                                </div>
+                            )
+                        })
                     }
                     </Slider>
                   </div>

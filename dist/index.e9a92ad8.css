@@ -646,6 +646,46 @@ h2 {
   background: theme-color;
 }
 
+.ftsec {
+  color: #fff9;
+  background-color: #02060c;
+  padding: 8rem 0;
+}
+
+.ftsec .logo img {
+  width: auto;
+  max-height: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.ftsec h4 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+}
+
+.ftsec p {
+  color: #fff9;
+  max-width: 90%;
+  font-size: 1.8rem;
+}
+
+.ftsec ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ftsec ul li {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.ftsec ul li a {
+  color: #fff9;
+  text-decoration: none;
+}
+
 .mainsec {
   padding: 50px 0;
 }

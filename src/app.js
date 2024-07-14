@@ -5,6 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -44,6 +45,7 @@ return (
             <div className="bodywarpper">
               <Outlet />
             </div>
+            <Footer />
         </div>
       </UserContext.Provider>
   </Provider>
@@ -84,7 +86,7 @@ const appRouter = createBrowserRouter([
         element: <Cart/>
       },
       {
-        path: "/whatsOnYourMind/:collectionId",
+        path: "/whatsOnYourMind/:collectionId/:tags",
         element: <WhatsOnYourMind />
       }
     ],
