@@ -809,11 +809,45 @@ h2 {
   font-size: 1.3rem;
 }
 
+.mainsec .filtersec .sort-by-div {
+  position: relative;
+}
+
+.mainsec .filtersec .sort-by-div .sort-by-div-option {
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  position: absolute;
+  bottom: -152px;
+  left: 0;
+  box-shadow: 0 0 6px #00000057;
+}
+
+.mainsec .filtersec .sort-by-div .sort-by-div-option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mainsec .filtersec .sort-by-div .sort-by-div-option ul li {
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.mainsec .filtersec .sort-by-div:hover .sort-by-div-option {
+  visibility: visible;
+  opacity: 1;
+}
+
 .mainsec .cardbox .cardimg {
   border-radius: 10px;
   width: 100%;
   height: 22rem;
   transition: all .5s;
+  position: relative;
   overflow: hidden;
 }
 
@@ -822,6 +856,19 @@ h2 {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.mainsec .cardbox .cardimg .res-offer {
+  color: #020202;
+  background: #ffffffa8;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  box-shadow: 0 8px 24px #959da533;
 }
 
 .mainsec .cardbox .cardcontent h3 {

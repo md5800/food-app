@@ -185,9 +185,59 @@ const Body =() =>{
                 <div className="cardsec mt-5">
                     <h2>Top restaurant chains in Kolkata</h2>
                     <div className="filtersec d-flex justify-start align-middle">
-                        <div className="filter-option">Sort By <i class="bi bi-chevron-down"></i></div>
-                        <div className="filter-option">Veg</div>
-                        <div className="filter-option">Non Veg</div>
+                        <div className="sort-by-div">
+                            <button className="filter-option">Sort By <i class="bi bi-chevron-down"></i></button>
+                            <div className="sort-by-div-option">
+                                <ul>
+                                    <li onClick={
+                                        ()=>{
+                                        const filteredList = [...newRestList].sort((a, b) => a.info.sla.deliveryTime - b.info.sla.deliveryTime);
+                                        console.log(filteredList);
+                                        setFilteredRestaurant(filteredList);
+                                        }
+                                    }>DeliveryTime</li>
+                                    <li onClick={
+                                        ()=>{
+                                        const filteredList = [...newRestList].sort((a, b) => b.info.avgRating - a.info.avgRating);
+                                        console.log(filteredList);
+                                        setFilteredRestaurant(filteredList);
+                                        }
+                                    }>Rating</li>
+                                    <li onClick={
+                                        ()=>{
+                                        const filteredList = [...newRestList].sort((a, b) => parseInt(a.info.costForTwo.replace(/[^\d]/g, ''), 10) - parseInt(b.info.costForTwo.replace(/[^\d]/g, ''), 10));
+                                        console.log(filteredList);
+                                        setFilteredRestaurant(filteredList);
+                                        }
+                                    }>Cost:LowtoHigh</li>
+                                    <li onClick={
+                                        ()=>{
+                                        const filteredList = [...newRestList].sort((a, b) => parseInt(b.info.costForTwo.replace(/[^\d]/g, ''), 10) - parseInt(a.info.costForTwo.replace(/[^\d]/g, ''), 10));
+                                        console.log(filteredList);
+                                        setFilteredRestaurant(filteredList);
+                                        }
+                                    }>Cost:HightoLow</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button className="filter-option" onClick={
+                            ()=>{const filteredList  = newRestList.filter((res)=> res.info.veg === true);
+                            // console.log("veg restaurant");
+                            setFilteredRestaurant(filteredList);
+                            }
+                        }>Veg</button>
+                        <button className="filter-option" onClick={
+                            ()=>{const filteredList  = newRestList.filter((res)=> res.info.veg === undefined);
+                            // console.log("Nonveg restaurant");
+                            setFilteredRestaurant(filteredList);
+                            }
+                        }>Non Veg</button>
+                        <button className="filter-option" onClick={
+                            ()=>{
+                            // console.log("all restaurant");
+                            setFilteredRestaurant(newRestList);
+                            }
+                        }>All</button>
                     </div>
                     <div className="row justify-content-start align-items-start">
                         {

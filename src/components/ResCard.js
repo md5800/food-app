@@ -4,11 +4,14 @@ const ResCard = (props) =>{
     const { resData } = props;
     // console.log(props); 
     // console.log(resData.data);
-    const {cloudinaryImageId , name , cuisines , avgRating , sla , costForTwo  } = resData?.info || {};
+    const {cloudinaryImageId , aggregatedDiscountInfoV3,  name , cuisines , avgRating , sla , costForTwo  } = resData?.info || {};
     return(
             <div className="cardbox mt-5">
                 <div className="cardimg">
                     <img src={CARD_IMG + cloudinaryImageId} alt="cardimg" />
+                    <div className="res-offer">
+                        {aggregatedDiscountInfoV3 === undefined ? null : aggregatedDiscountInfoV3?.header + " " + aggregatedDiscountInfoV3?.subHeader}
+                    </div>
                 </div>
                 <div className="cardcontent">
                 <h3 className="mt-3 mb-3">{name} <span style={{color:"#000"}}>({cuisines?.join(",")})</span></h3>

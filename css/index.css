@@ -275,18 +275,59 @@ h2 {
 .mainsec .filtersec .filter-option i {
   font-size: 1.3rem;
 }
+.mainsec .filtersec .sort-by-div {
+  position: relative;
+}
+.mainsec .filtersec .sort-by-div .sort-by-div-option {
+  position: absolute;
+  bottom: -152px;
+  left: 0;
+  background: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.3411764706);
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+}
+.mainsec .filtersec .sort-by-div .sort-by-div-option ul {
+  margin: 0;
+  padding: 0;
+}
+.mainsec .filtersec .sort-by-div .sort-by-div-option ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.mainsec .filtersec .sort-by-div:hover .sort-by-div-option {
+  visibility: visible;
+  opacity: 1;
+}
 .mainsec .cardbox .cardimg {
   width: 100%;
   height: 22rem;
   overflow: hidden;
   border-radius: 10px;
   transition: 0.5s ease all;
+  position: relative;
 }
 .mainsec .cardbox .cardimg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.mainsec .cardbox .cardimg .res-offer {
+  color: #020202;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.6588235294);
+  padding: 4px 8px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .mainsec .cardbox .cardcontent h3 {
   color: #7e5d01;
