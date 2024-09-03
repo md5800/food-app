@@ -14,9 +14,9 @@ const ResCard = (props) =>{
                     </div>
                 </div>
                 <div className="cardcontent">
-                <h3 className="mt-3 mb-3">{name} <span style={{color:"#000"}}>({cuisines?.join(",")})</span></h3>
-                <h5><i className="bi bi-star"></i> {avgRating} <span className="dot-divider"></span> {sla?.slaString} <span className="dot-divider"></span> {costForTwo}</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                    <h3 className="mt-3 mb-3">{name} <span style={{color:"#000"}}>({cuisines?.join(",")})</span></h3>
+                    <h5><i className="bi bi-star"></i> {avgRating} <span className="dot-divider"></span> {sla?.slaString} <span className="dot-divider"></span> {costForTwo}</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
                 </div>
             </div>
     )

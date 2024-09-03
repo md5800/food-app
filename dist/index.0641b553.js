@@ -36450,13 +36450,13 @@ const ResCard = (props)=>{
                             }, void 0, true, {
                                 fileName: "src/components/ResCard.js",
                                 lineNumber: 17,
-                                columnNumber: 50
+                                columnNumber: 54
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ResCard.js",
                         lineNumber: 17,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
                         children: [
@@ -36465,7 +36465,7 @@ const ResCard = (props)=>{
                             }, void 0, false, {
                                 fileName: "src/components/ResCard.js",
                                 lineNumber: 18,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined),
                             " ",
                             avgRating,
@@ -36475,7 +36475,7 @@ const ResCard = (props)=>{
                             }, void 0, false, {
                                 fileName: "src/components/ResCard.js",
                                 lineNumber: 18,
-                                columnNumber: 64
+                                columnNumber: 68
                             }, undefined),
                             " ",
                             sla?.slaString,
@@ -36485,7 +36485,7 @@ const ResCard = (props)=>{
                             }, void 0, false, {
                                 fileName: "src/components/ResCard.js",
                                 lineNumber: 18,
-                                columnNumber: 119
+                                columnNumber: 123
                             }, undefined),
                             " ",
                             costForTwo
@@ -36493,14 +36493,14 @@ const ResCard = (props)=>{
                     }, void 0, true, {
                         fileName: "src/components/ResCard.js",
                         lineNumber: 18,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit?"
                     }, void 0, false, {
                         fileName: "src/components/ResCard.js",
                         lineNumber: 19,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
@@ -41928,6 +41928,7 @@ const cartSlice = (0, _toolkit.createSlice)({
         },
         clearCart: (state)=>{
             state.items.length = 0;
+        // or we can return an empty array ex: return {items: []} this will also make the state empty
         }
     }
 });

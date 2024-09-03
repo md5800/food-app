@@ -22,6 +22,7 @@ const cartSlice = createSlice(
             },
             clearCart: (state)=>{
                 state.items.length = 0;
+                // or we can return an empty array ex: return {items: []} this will also make the state empty
             },
         }
     }

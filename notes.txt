@@ -95,6 +95,21 @@ Redux toolkit steps:
 -dispatch(action)
 -selector
 
+Episode 13:
+1. type of test cases (from a developer end)
+ a) Unit Testing: When you are testing only a specific portion of your app is called unit testing 
+ b) Integration Testing: When you are testing a specific feature of your app where more than one components are involved to build the feature.
+ c) End to End Testing - e2e tsring: When you are testing the whole flow of the website.
+
+ To write test case code we need React Testing Library, and this React Testing Library use JEST behind the scene.
+
+ Setting up testing in our app-----
+ 1. Install React Testing Library
+ 2. Install JEST
+ 3. Install Babel dependencies
+ 4. configure Babel in babel.config.js
+ 5. Configure Pracel config file to disable default babel transformation
+
 ===========React hooks===========
 hooks are used to change state of our UI design.
 
@@ -315,7 +330,7 @@ How to get data(read data) in add to cart process:
 For this we use a selector this process is called subscribing to our store basically it sync the header cart to our cart store so that when ever new product is added to our cart the header cart icon is also updated.
 
 Redux toolkit steps:
--Intasll @reduxjs/toolkit and react-redux
+-Install @reduxjs/toolkit and react-redux
 -build our store
 -connect store to our app
 -create slice (cart slice)
