@@ -108,7 +108,18 @@ Episode 13:
  2. Install JEST
  3. Install Babel dependencies
  4. configure Babel in babel.config.js
- 5. Configure Pracel config file to disable default babel transformation
+ 5. Configure Pracel config file(.parcelrc) to disable default babel transformation
+ 6. to run jest command is npx jest --init
+ **JSDOM: It is like a browser(not a actual browser) where the test case code will run.
+ 7. Install JSDOM Library jest-environment-jsdom
+ **Where should we write the code for test cases: if we run npm run test then we will see it is searching the code in __tests__ folder. So we will create a folder called __tests__ and if we add any file in it and write test code that will work.
+ else we can create direct file with extension .test.js/.test.ts/.spec.js/.spect.ts without creating the folder that will also work
+ Ex. if we want to write cases for header we can add any of the bellow file and write test code in it
+ Header.test.js
+ Header.test.ts
+ Header.spec.js
+ Header.spect.ts
+
 
 ===========React hooks===========
 hooks are used to change state of our UI design.
