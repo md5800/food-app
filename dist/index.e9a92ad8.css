@@ -1073,6 +1073,50 @@ h2 {
   font-size: 1.4rem;
 }
 
+.contactsec {
+  padding: 8rem 0;
+}
+
+.contactsec h1 {
+  color: #7e5d01;
+  font-size: 2.4rem;
+}
+
+.contactsec .formbox {
+  border-radius: 2rem;
+  padding: 5rem 3rem;
+  box-shadow: 0 0 15px #00000073;
+}
+
+.contactsec .formbox label {
+  font-size: 1.6rem;
+}
+
+.contactsec .formbox input {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.6rem;
+}
+
+.contactsec .formbox input[type="checkbox"] {
+  padding: unset;
+}
+
+.contactsec .formbox button[type="submit"] {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e5d01;
+  border: 0;
+  border-radius: 15px;
+  outline: 0;
+  width: 100%;
+  padding: 12px 35px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

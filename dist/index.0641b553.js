@@ -41202,44 +41202,175 @@ const Contact = ()=>{
         className: "contactsec",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "container",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "row",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "col-md-12",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "row",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "abtcontent text-center py-5",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                children: "Need Help?"
-                            }, void 0, false, {
-                                fileName: "src/components/Contact.js",
-                                lineNumber: 8,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "Contact Us"
-                            }, void 0, false, {
-                                fileName: "src/components/Contact.js",
-                                lineNumber: 9,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                        className: "col-md-12",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "abtcontent text-center pb-5",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                    children: "Need Help?"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 8,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    children: "Contact Us"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 9,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 7,
+                            columnNumber: 24
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/components/Contact.js",
-                        lineNumber: 7,
-                        columnNumber: 24
+                        lineNumber: 6,
+                        columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Contact.js",
-                    lineNumber: 6,
-                    columnNumber: 21
+                    lineNumber: 5,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "row justify-content-center align-items-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "col-md-7",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "formbox",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "mb-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                for: "exampleInputEmail1",
+                                                class: "form-label",
+                                                children: "Email address"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 18,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                type: "email",
+                                                class: "form-control",
+                                                id: "exampleInputEmail1",
+                                                "aria-describedby": "emailHelp"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 19,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                id: "emailHelp",
+                                                class: "form-text",
+                                                children: "We'll never share your email with anyone else."
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 20,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.js",
+                                        lineNumber: 17,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "mb-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                for: "exampleInputPassword1",
+                                                class: "form-label",
+                                                children: "Password"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 23,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                type: "password",
+                                                class: "form-control",
+                                                id: "exampleInputPassword1"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 24,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.js",
+                                        lineNumber: 22,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "mb-3 form-check",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                type: "checkbox",
+                                                class: "form-check-input",
+                                                id: "exampleCheck1"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 27,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                class: "form-check-label",
+                                                for: "exampleCheck1",
+                                                children: "Check me out"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 28,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.js",
+                                        lineNumber: 26,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        type: "submit",
+                                        class: "btn btn-primary",
+                                        children: "Submit"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.js",
+                                        lineNumber: 30,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 16,
+                                columnNumber: 29
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 15,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 14,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 13,
+                    columnNumber: 17
                 }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 5,
-                columnNumber: 17
-            }, undefined)
-        }, void 0, false, {
+            ]
+        }, void 0, true, {
             fileName: "src/components/Contact.js",
             lineNumber: 4,
             columnNumber: 12

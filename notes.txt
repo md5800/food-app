@@ -119,6 +119,12 @@ Episode 13:
  Header.test.ts
  Header.spec.js
  Header.spect.ts
+ 8. Install @babel/preset-react (npm i -D @babel/preset-react) to make jsx work in test cases
+ 9. Include @babel/preset-react in babel config
+ 10. Install @testing-library/jest-dom(npm i -D @testing-library/jest-dom)
+
+When we want to test any component using unit testing that component must be loaded into the js DOM. For that we use render method which comes from rest testing library. Now to test that the compoment is correctly rendered or not we use screen. method.
+
 
 
 ===========React hooks===========
